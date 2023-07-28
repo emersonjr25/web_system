@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forecast prices</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url_for ('static', filename='images/favicon.ico')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{ url_for ('static', filename='css/style.css')}}">
 </head>
 <body>
@@ -20,7 +20,7 @@
     <main>
         <p> <h2> Emerson Campos Barbosa Júnior </h2></p>
        <p> Hi, my name is Emerson Campos Barbosa Júnior. I am a data scientist with a degree in biology and a master’s in ecology. Currently, I am a doctoral candidate in the Ecology program at the Federal University of Bahia. I possess knowledge in the computational field, specifically in the following areas: (1) programming languages: R, Python, and Netlogo (with basic understanding of Linux, HTML, CSS, and Javascript/Nodejs); and (2) tools: MySQL database (SQL language), Git, and PowerBI (with a basic understanding of AWS, MongoDB, and Docker). I have knowledge in mathematical concepts, including descriptive statistics, inferential statistics (both frequentist and model selection approaches), scientific methodology, statistical philosophy, sample design, and machine learning (including both supervised and unsupervised techniques). Additionally, I possess a basic understanding of calculus (limits, derivatives, and integrals), Bayesian statistics/Markov chains, and deep learning. I possess general knowledge in the areas of business and investment, including key metrics. In the academic area, I have experience working with computational simulations and biological databases. I have also had the opportunity to participate in various laboratories, including the Laboratory of Terrestrial Vertebrates, Nucleus of Ethology and Evolution, and Laboratory of Spatial Ecology. My academic background includes the fields of ecology, evolution, phenotypic plasticity, programming in the R language, statistics, and computational modeling. I have been a member of the INCT IN-Tree project (P1: Mathematical, computational, and statistical modeling applied to ecology and evolution) and have published scientific articles in high-impact journals. </p>
-       <img src="images/me.jpg" alt="My photo">
+       <img src="{{ url_for ('static', filename='images/me.jpg')}}" alt="My photo">
        <p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/WEQU6kiJIL4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </p>

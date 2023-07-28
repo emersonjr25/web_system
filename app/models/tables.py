@@ -1,9 +1,9 @@
 from app import db
 
-class Machine():
+class Machine(db.Model):
     __tablename__ = 'machine_learning'
 
-    id = db.Column(db.Integer)
+    id = db.Column(db.Integer, primary_key=True)
     Lot_size = db.Column(db.Float)
     Year_built = db.Column(db.Float)
     Overall_material = db.Column(db.Float)
