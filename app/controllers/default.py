@@ -1,7 +1,8 @@
-from flask import render_template
+from flask import render_template, request
 from app import app, db
 from app.models.form import MachineTwo
 from app.models.tables import Machine
+from json import dumps
 
 @app.route('/', methods=['GET'])
 def home():
@@ -11,10 +12,13 @@ def home():
 def contact():
     return render_template('html/contact.html')
 
-@app.route('/result', methods=['GET', 'POST'])
+@app.route('/result', methods=['POST'])
 def result():
-    form = MachineTwo()
-    print(form.Lot_size.data)
+   # if request.method == 'POST':
+  #      return dumps(request.form)
+ # model4.predict(np.array([X_test.iloc[0, :]]))
+#a = np.array([X_test.iloc[0, :]])
+#X_test.info
     return render_template('html/result.html')
 
 @app.route('/projects', methods=['GET'])
