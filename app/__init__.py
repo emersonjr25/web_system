@@ -6,9 +6,8 @@ import os.path
 app = Flask(__name__, static_folder='static')
 app.config.from_object('config')
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join('app/storage.db')
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
 from app.controllers import default
-from app.models import tables, form
+from app.models import tables

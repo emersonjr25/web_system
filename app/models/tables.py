@@ -20,7 +20,7 @@ class Machine(db.Model):
     Size_garage = db.Column(db.Float)
     Pool_area = db.Column(db.Float)
 
-    def _init__(self, Lot_size, Year_built, Overall_material, Overall_condition, Remodel_date, Masonry_veneer, First_Floor_square, Second_Floor_square, Above_grade_Area, Full_bathrooms, Number_Bedrooms_above_base, Number_Kitchens, Total_rooms_above_base, Size_garage, Pool_area):
+    def __init__(self, Lot_size, Year_built, Overall_material, Overall_condition, Remodel_date, Masonry_veneer, First_Floor_square, Second_Floor_square, Above_grade_Area, Full_bathrooms, Number_Bedrooms_above_base, Number_Kitchens, Total_rooms_above_base, Size_garage, Pool_area):
         self.Lot_size = Lot_size
         self.Year_built = Year_built
         self.Overall_material = Overall_material
